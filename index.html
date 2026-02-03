@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="displayValue"></div>
+      <div id="buttons">
+        <button onclick="clearDisplay()" id="operators">AC</button>
+        <button onclick="remove()" id="operators">DEL</button>
+        <button onclick="appendSymToDisplay('%')" id="operators">%</button>
+        <button onclick="appendSymToDisplay('/')" id="operators">/</button>
+      </div>
+      <div id="buttons">
+        <button onclick="appendNumToDisplay('7')">7</button>
+        <button onclick="appendNumToDisplay('8')">8</button>
+        <button onclick="appendNumToDisplay('9')">9</button>
+        <button onclick="appendSymToDisplay('*')" id="operators">*</button>
+      </div>
+      <div id="buttons">
+        <button onclick="appendNumToDisplay('4')">4</button>
+        <button onclick="appendNumToDisplay('5')">5</button>
+        <button onclick="appendNumToDisplay('6')">6</button>
+        <button onclick="appendSymToDisplay('+')" id="operators">+</button>
+      </div>
+      <div id="buttons">
+        <button onclick="appendNumToDisplay('1')">1</button>
+        <button onclick="appendNumToDisplay('2')">2</button>
+        <button onclick="appendNumToDisplay('3')">3</button>
+        <button onclick="appendSymToDisplay('-')" id="operators">-</button>
+      </div>
+      <div id="buttons">
+        <button onclick="appendNumToDisplay('00')">00</button>
+        <button onclick="appendNumToDisplay('0')">0</button>
+        <button onclick="appendSymToDisplay('.')">.</button>
+        <button onclick="calculate()" id="equal">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
